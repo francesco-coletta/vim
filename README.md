@@ -7,7 +7,7 @@ Installation:
 
 Create in home folder sylinks:
 
-   ln -s ~/.vim/vimrc ~/.vimrc\r
+   ln -s ~/.vim/vimrc ~/.vimrc
    ln -s ~/.vim/gvimrc ~/.gvimrc
 
 
