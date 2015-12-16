@@ -7,15 +7,13 @@ Installation:
 
 Create in home folder sylinks:
 
-   ln -s ~/.vim/vimrc ~/.vimrc
-   ln -s ~/.vim/gvimrc ~/.gvimrc
-
+   * ln -s ~/.vim/vimrc ~/.vimrc
+   * ln -s ~/.vim/gvimrc ~/.gvimrc
 
 
 
 
 ==========================================
-2015-12-16
 
 --------------------------
 Keep your dotfiles in git
