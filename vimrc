@@ -1,3 +1,16 @@
+
+"-------------------------------------------
+"Imposto la directory di backup e quella temporanea in modo che vim non crei i file di backup e temp nella cartella corrente
+"IMP: the folder must be exist
+"Reference: http://ammonsonline.com/stop-vim-from-crapping-in-my-directories/
+
+set backupdir=~/tmp/vim,.
+set dir=~/tmp/vim//,.
+
+
+
+
+
 "-------------------------------------------
 set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
