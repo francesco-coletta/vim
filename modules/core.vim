@@ -8,6 +8,22 @@ set number
 " Enable invisible characters.
 set nolist
 
+" List chars
+set listchars=""                  " Reset the listchars
+set listchars=tab:▸␣             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.            " show trailing spaces as dots
+set listchars+=extends:>          " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the right of the screen
+set listchars+=precedes:<         " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the left of the screen
+set listchars+=eol:$
+set listchars+=nbsp:☠
+
+"Invisible character colors 
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
+
 " More natural splitting.
 set splitbelow
 set splitright
@@ -31,3 +47,19 @@ set completeopt-=preview
 
 " Make session files minimal.
 set sessionoptions=blank,curdir,folds,help,tabpages,winsize
+
+" folding
+set foldmethod=indent
+set foldlevel=99
+set foldnestmax=10
+"set foldopen=all
+"set foldclose=all
+set foldcolumn=0
+set nofoldenable
+
+" resize multiple windows
+nnoremap <silent> <Leader><Down> :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader><Up> :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <Leader><Left> 10<C-w>><CR>
+nnoremap <silent> <Leader><Right> 10<C-w><<CR>
+
