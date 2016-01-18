@@ -63,3 +63,9 @@ nnoremap <silent> <Leader><Up> :exe "resize " . (winheight(0) * 2/3)<CR>
 nnoremap <silent> <Leader><Left> 10<C-w>><CR>
 nnoremap <silent> <Leader><Right> 10<C-w><<CR>
 
+" Switching to another buffer
+" http://vim.wikia.com/wiki/Using_tab_pages
+set switchbuf=usetab,newtab
+nnoremap <F8> :sbnext<CR>
+nnoremap <S-F8> :sbprevious<CR>
+
