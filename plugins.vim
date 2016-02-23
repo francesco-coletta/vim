@@ -16,3 +16,6 @@ Plug 'tpope/vim-jdaddy'
 Plug 'scrooloose/syntastic'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+"Plug 'jeetsukumaran/vim-buffergator'
+

@@ -1,3 +1,8 @@
+" Set 256 colors in vi
+" Ref: http://vim.wikia.com/wiki/256_colors_in_vim
+set t_Co=256
+
+
 " Backspace is managed by vim-sensible, but I need it here too because some
 " plugins depend on it during start up.
 set backspace=indent,eol,start
